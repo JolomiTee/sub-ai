@@ -1,0 +1,9 @@
+/* Hero section */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #FFFFFF 12.92%, rgba(181, 255, 186, 0.29) 100%);
