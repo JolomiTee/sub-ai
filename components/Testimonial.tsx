@@ -16,7 +16,7 @@ const Testimonial = () => {
 					<Badge className="mb-6 text-[#1BB425] border-4 border-[#072206]/10 text-sm animate-bounce-subtle rounded-full p-1 flex justify-center item-center mx-auto px-2 bg-white">
 						Testimonials
 					</Badge>
-					<h2 className="font-medium text-4xl md:text-5xl mb-16 text-balance text-[#072206]">
+					<h2 className="font-medium text-4xl md:text-5xl mb-16 text-balance text-[#072206]  tracking-[-1.2px]">
 						Still unsure? These cooks
 						<br />
 						were too, until they tried it.
