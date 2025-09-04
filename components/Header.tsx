@@ -1,9 +1,8 @@
-import Image from 'next/image';
-import React from 'react'
-import { Button } from './ui/button';
+import Image from "next/image";
+import { Button } from "./ui/button";
 
 const Header = () => {
-  return (
+	return (
 		<header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 transition-all duration-300 hover:bg-background/98">
 			<div className="container w-[80%] mx-auto px-4 h-16 flex items-center justify-between">
 				<div className="flex items-center gap-2 group">
@@ -25,7 +24,7 @@ const Header = () => {
 				</div>
 			</div>
 		</header>
-  );
-}
+	);
+};
 
-export default Header
+export default Header;

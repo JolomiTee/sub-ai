@@ -1,10 +1,9 @@
-import React from 'react'
-import { ChefHat, Sparkles, Star, ArrowRight, CheckCircle } from "lucide-react";
-import { Badge } from './ui/badge';
-import { Button } from './ui/button';
+import { ChefHat, Sparkles } from "lucide-react";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 const Hero = () => {
-  return (
+	return (
 		<section className="relative bg-hero py-16 overflow-hidden">
 			<div className="absolute inset-0 bg-[url('/kitchen-ingredients-floating.png')] opacity-5"></div>
 			<div className="container space-y-8 lg:space-y-12 mx-auto px-4 text-center relative z-10">
@@ -67,7 +66,7 @@ const Hero = () => {
 				<div className="w-8 h-8 bg-secondary/30 rounded-full animate-pulse"></div>
 			</div>
 		</section>
-  );
-}
+	);
+};
 
-export default Hero
+export default Hero;

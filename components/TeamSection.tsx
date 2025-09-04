@@ -1,12 +1,11 @@
-import React from 'react'
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
-import { Card, CardContent } from './ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
 
 const TeamSection = () => {
-  return (
-		<section className="py-20 bg-background">
+	return (
+		<section className="py-20 bg-hero">
 			<div className="container mx-auto px-4 text-center">
 				<div className="scroll-animate opacity-0 translate-y-8 transition-all duration-700">
 					<Badge variant="secondary" className="mb-6 ">
@@ -123,7 +122,7 @@ const TeamSection = () => {
 				</div>
 			</div>
 		</section>
-  );
-}
+	);
+};
 
-export default TeamSection
+export default TeamSection;

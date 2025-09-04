@@ -1,9 +1,8 @@
-import React from 'react'
-import { Button } from './ui/button';
-import { ChefHat } from 'lucide-react';
+import { ChefHat } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Footer = () => {
-  return (
+	return (
 		<footer className="py-12 bg-muted/30 border-t border-border">
 			<div className="container mx-auto px-4">
 				<div className="flex flex-col md:flex-row justify-between items-center gap-4">
@@ -36,7 +35,7 @@ const Footer = () => {
 				</div>
 			</div>
 		</footer>
-  );
-}
+	);
+};
 
-export default Footer
+export default Footer;

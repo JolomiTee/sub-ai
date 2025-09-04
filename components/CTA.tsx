@@ -1,8 +1,7 @@
-import React from 'react'
-import { Button } from './ui/button';
+import { Button } from "./ui/button";
 
 const CTA = () => {
-  return (
+	return (
 		<section className="py-20 bg-[#1BB425] text-[#1BB425]-foreground overflow-hidden relative">
 			<div className="absolute inset-0 bg-[url('/3d-colorful-blocks-pattern.png')] opacity-20"></div>
 			<div className="container mx-auto px-4 relative z-10">
@@ -36,7 +35,7 @@ const CTA = () => {
 				<div className="w-full h-full bg-gradient-to-br from-accent/30 to-secondary/30 rounded-full animate-float animate-pulse"></div>
 			</div>
 		</section>
-  );
-}
+	);
+};
 
-export default CTA
+export default CTA;

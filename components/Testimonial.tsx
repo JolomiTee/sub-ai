@@ -1,20 +1,16 @@
-import React from 'react'
-
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { ChefHat, Sparkles, Star, ArrowRight, CheckCircle } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Star } from "lucide-react";
 const Testimonial = () => {
-  return (
-		<section className="py-20 bg-muted/30">
+	return (
+		<section className="py-20 bg-[#F9F9F9]">
 			<div className="container mx-auto px-4 text-center">
 				<div className="scroll-animate opacity-0 translate-y-8 transition-all duration-700">
-					<Badge variant="secondary" className="mb-6 ">
+					<Badge className="mb-6 text-[#1BB425] border-4 border-[#072206]/10 text-sm animate-bounce-subtle rounded-full p-1 flex justify-center item-center mx-auto px-2 bg-white">
 						Testimonials
 					</Badge>
-					<h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-16 text-balance">
+					<h2 className="font-medium text-4xl md:text-5xl mb-16 text-balance text-[#072206]">
 						Still unsure? These cooks
 						<br />
 						were too, until they tried it.
@@ -97,7 +93,7 @@ const Testimonial = () => {
 				</div>
 			</div>
 		</section>
-  );
-}
+	);
+};
 
-export default Testimonial
+export default Testimonial;
