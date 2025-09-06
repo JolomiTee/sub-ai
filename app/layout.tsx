@@ -9,7 +9,8 @@ const geistSans = Geist({
 
 
 export const metadata: Metadata = {
-	title: "Sub AI",
+	title: "sub-ai",
+	icons: "/logo.svg",
 	description:
 		"Sub AI instantly suggests the best ingredient substitutes, so you can keep cooking without skipping a beat.",
 };
