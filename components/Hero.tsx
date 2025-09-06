@@ -9,12 +9,13 @@ const Hero = () => {
 			<div className="absolute inset-0 bg-[url('/kitchen-ingredients-floating.png')] opacity-5"></div>
 			<div className="container space-y-8 lg:space-y-12 mx-auto px-4 text-center relative z-10">
 				<div className="animate-fade-in-up">
-					<Badge className="mb-6 text-[#1BB425] text-sm animate-bounce-subtle bg-[#1BB425]/5 rounded-full p-1 flex justify-center item-center mx-auto px-2">
-						<div className="rounded-full border bg-white w-[49px] h-[24px] text-xs flex justify-center item-center">
+					<Badge className="mb-6 text-[#1BB425] text-sm animate-bounce-subtle bg-[#1BB425]/5 rounded-full p-1 flex justify-center items-center mx-auto px-2">
+						<div className="rounded-full border bg-white w-[49px] h-[24px] text-xs flex justify-center items-center">
 							v&nbsp;1.0
 						</div>
 						Exploration turns product
 					</Badge>
+
 					<h1 className="font-medium text-5xl md:text-[56px] leading-[66px] tracking-[-1.5px] mb-6 text-balance animate-slide-up text-[#072206]">
 						Missing an Ingredient?
 						<br />
