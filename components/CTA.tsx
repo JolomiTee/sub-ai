@@ -1,38 +1,37 @@
+import Image from "next/image";
 import { Button } from "./ui/button";
 
 const CTA = () => {
 	return (
-		<section className="py-20 bg-[#1BB425] text-[#1BB425]-foreground overflow-hidden relative">
-			<div className="absolute inset-0 bg-[url('/3d-colorful-blocks-pattern.png')] opacity-20"></div>
-			<div className="container mx-auto px-4 relative z-10">
-				<div className="max-w-2xl scroll-animate opacity-0 translate-y-8 transition-all duration-700">
-					<h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-6 text-balance">
+		<section className="h-[80vh] flex justify-center items-center">
+			<div className="py-[50px] max-w-[1040px] w-full rounded-[24px] bg-[#1BB425] overflow-hidden relative px-[62px]">
+				<div className="max-w-2xl scroll-animate transition-all duration-700">
+					<h2 className="text-[#171717] font-medium text-4xl mb-6 text-balance">
 						We enjoy building random stuffs, for random use
 					</h2>
-					<p className=" text-xl mb-8 opacity-90">
-						If you want to build something together, or just want to say
-						hi, we'd love to hear from you.
+					<p className=" text-16 text-[#171717] mb-8 max-w-[485px]">
+						Sub AI is just one of the many random things we’ve built. If
+						you’ve got feedback or thoughts, we’d love to hear from you.
 					</p>
-					<div className="flex flex-col sm:flex-row gap-4">
-						<Button
-							size="lg"
-							variant="secondary"
-							className=" text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-						>
-							Right, message us
-						</Button>
-						<Button
-							size="lg"
-							variant="outline"
-							className=" text-lg px-8 py-6 border-[#1BB425]-foreground/20 text-[#1BB425]-foreground hover:bg-[#1BB425]-foreground/10 bg-transparent transition-all duration-300 hover:scale-105"
-						>
-							Get in touch
+
+					<div className="flex gap-6">
+						<input
+							className="w-[328px] h-[48px] bg-[#171717]/20 rounded-full border-[#008509] px-4 placeholder:text-white/80"
+							placeholder="Send us a message"
+						/>
+						<Button className="text-[#1BB425] bg-[#171717] h-[48px] rounded-full">
+							Send Message
 						</Button>
 					</div>
 				</div>
-			</div>
-			<div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 opacity-30">
-				<div className="w-full h-full bg-gradient-to-br from-accent/30 to-secondary/30 rounded-full animate-float animate-pulse"></div>
+				<Image
+					src={"/cubes-bg.png"}
+					alt=""
+					width={300}
+					height={300}
+					unoptimized
+					className="w-[480px] h-auto z-10 absolute bottom-0 right-0"
+				/>
 			</div>
 		</section>
 	);

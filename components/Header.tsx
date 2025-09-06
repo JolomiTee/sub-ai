@@ -7,9 +7,7 @@ const Header = () => {
 			<div className="container w-[80%] mx-auto px-4 h-16 flex items-center justify-between">
 				<div className="flex items-center gap-2 group">
 					<Image src="/logo.svg" width={30} height={30} alt="SubAI logo" />
-					<span className="font-space-grotesk font-bold text-xl">
-						Sub AI
-					</span>
+					<span className="font-bold text-[#1BB425] text-xl">sub-ai</span>
 				</div>
 				<div className="flex items-center gap-4">
 					<Button
@@ -18,8 +16,8 @@ const Header = () => {
 					>
 						Login
 					</Button>
-					<Button className=" bg-[#1BB425] hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-						Try Free
+					<Button className=" bg-[#1BB425] rounded-full hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+						Try it out
 					</Button>
 				</div>
 			</div>

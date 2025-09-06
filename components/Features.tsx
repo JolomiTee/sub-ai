@@ -28,7 +28,7 @@ const Features = () => {
 		},
 	];
 	return (
-		<section className="py-20 bg-[#F9F9F9]">
+		<section className="py-16 bg-[#F9F9F9]">
 			<div className="container mx-auto px-4 text-center">
 				<div className="scroll-animate opacity-0 translate-y-8 transition-all duration-700">
 					<Badge className="mb-6 text-[#1BB425] border-4 border-[#072206]/10 text-sm animate-bounce-subtle rounded-full p-1 flex justify-center item-center mx-auto px-2 bg-white">
@@ -39,7 +39,7 @@ const Features = () => {
 						<br />
 						you needed
 					</h2>
-					<p className=" text-xl text-[#475367] mb-4 max-w-2xl mx-auto">
+					<p className=" text-xl text-[#475367] mb-4 max-w-[548px] mx-auto">
 						Sub AI saves time, reduces kitchen stress, and cooks with
 						confidence, no matter what's in your pantry
 					</p>

@@ -9,7 +9,7 @@ const Hero = () => {
 			<div className="container space-y-8 lg:space-y-12 mx-auto px-4 text-center relative z-10">
 				<div className="animate-fade-in-up">
 					<Badge className="mb-6 text-[#1BB425] text-sm animate-bounce-subtle bg-[#1BB425]/5 rounded-full p-1 flex justify-center item-center mx-auto px-2">
-						<div className="rounded-full border border-[#1BB425] bg-white w-[49px] h-[24px] text-xs flex justify-center item-center">
+						<div className="rounded-full border bg-white w-[49px] h-[24px] text-xs flex justify-center item-center">
 							v&nbsp;1.0
 						</div>
 						Exploration turns product
@@ -29,20 +29,20 @@ const Hero = () => {
 						<Button
 							variant="outline"
 							size="lg"
-							className="text-lg px-8 py-6 bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-full"
+							className="text-lg px-8 h-[48px] bg-transparent hover:bg-[#1BB425] transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-full"
 						>
 							About the Builders
 						</Button>
 						<Button
 							size="lg"
-							className="text-lg px-8 py-6 bg-[#1BB425] hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group rounded-full"
+							className="text-lg px-8 h-[48px] bg-[#1BB425] hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group rounded-full"
 						>
 							Try it out for free
 						</Button>
 					</div>
 				</div>
 
-				<div className="w-full max-w-3/4 h-[440px] rounded-lg mx-auto bg-white">
+				<div className="w-full max-w-4/5 h-[440px] rounded-lg mx-auto bg-white">
 					hello
 				</div>
 			</div>
