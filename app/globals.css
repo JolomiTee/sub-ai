@@ -135,7 +135,7 @@
 }
 
 /* Added comprehensive animation keyframes and utility classes */
-/* @keyframes fadeInUp {
+@keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -230,10 +230,10 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 /* Animation utility classes */
-/* .animate-fade-in-up {
+.animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out;
 }
 
@@ -267,24 +267,19 @@
 
 .animate-spin-slow {
   animation: spinSlow 3s linear infinite;
-} */
+}
 
-/* Scroll animation classes */
-/* .scroll-animate {
+.scroll-animate {
   transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   transform: translateY(2rem);
-} */
+}
 
-/* Use a unique class name to avoid collisions with libraries that
-   also use `.animate-in`. When an element becomes visible, add
-   `is-visible` to trigger the fade/translate to the natural state. */
-/* .scroll-animate.is-visible {
+.scroll-animate.is-visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
-} */
+}
 
-/* Enhanced hover effects */
 .group:hover .group-hover\:translate-x-2 {
   transform: translateX(0.5rem);
 }

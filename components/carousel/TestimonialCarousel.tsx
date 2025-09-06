@@ -1,17 +1,13 @@
-import { testimonials } from "@/data";
 import { Card, CardContent } from "@/components/ui/card";
 import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
-	CarouselNext,
-	CarouselPrevious,
 } from "@/components/ui/carousel";
-import AutoScroll from "embla-carousel-auto-scroll";
+import { testimonials } from "@/data";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 export function TestimonialsCarousel() {
-
 	return (
 		<div className="w-full py-5">
 			<Carousel
