@@ -1,4 +1,3 @@
-// components/Clock.tsx
 "use client";
 
 import { Clock4 } from "lucide-react";
@@ -15,5 +14,10 @@ export default function Clock() {
 		return () => clearInterval(interval);
 	}, []);
 
-	return <div className="text-[#FF5B1B] flex items-center justify-center gap-2"><Clock4 size={20} />{time}</div>;
+	return (
+		<div className="text-[#FF5B1B] flex items-center justify-center gap-2">
+			<Clock4 size={20} />
+			{time}
+		</div>
+	);
 }

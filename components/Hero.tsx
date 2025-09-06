@@ -1,6 +1,7 @@
 import { ChefHat, Sparkles } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 const Hero = () => {
 	return (
@@ -42,8 +43,14 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div className="w-full max-w-4/5 h-[440px] rounded-lg mx-auto bg-white">
-					hello
+				<div className="w-full max-w-4/5 h-[440px] rounded-lg mx-auto overflow-hidden">
+					<Image
+						src={"/hero-bg.svg"}
+						alt=""
+						className="object-[120%] w-full h-full"
+						width={1040}
+						height={528}
+					/>
 				</div>
 			</div>
 			<div className="absolute top-20 left-10 animate-float">
@@ -62,9 +69,7 @@ const Hero = () => {
 			<div
 				className="absolute bottom-20 left-1/4 animate-float"
 				style={{ animationDelay: "2s" }}
-			>
-				<div className="w-8 h-8 bg-secondary/30 rounded-full animate-pulse"></div>
-			</div>
+			></div>
 		</section>
 	);
 };

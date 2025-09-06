@@ -1,72 +1,15 @@
-import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import { Card, CardContent } from "./ui/card";
-import Link from "next/link";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { boys } from "@/data";
+import Image from "next/image";
+import Link from "next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Badge } from "./ui/badge";
+import { Card, CardContent } from "./ui/card";
 const TeamSection = () => {
-	const boys = [
-		{
-			bg: "/quake-bg.png",
-			pic: "/quake.png",
-			fb: "QS",
-			name: "Quake Silver",
-			text: "I specialize in creating user-friendly designs that make products easier and more enjoyable to use. By understanding users' needs, I design solutions that fit naturally into their daily lives.",
-			email: "ogunyasilver@gmail.com",
-			socials: [
-				{
-					platform: "twitter",
-					link: "",
-					hoverText: "@Quakesilver01",
-				},
-				{
-					platform: "dribble",
-					link: "",
-					hoverText: "",
-				},
-				{
-					platform: "website",
-					link: "",
-					hoverText: "",
-				},
-				{
-					platform: "linkedin",
-					link: "",
-					hoverText: "",
-				},
-			],
-		},
-		{
-			bg: "/fortunate-bg.png",
-			pic: "/fortunate.png",
-			name: "Fortunate",
-			fb: "F",
-			text: "A developer who excels at bringing pixel perfect design to life. With a keen eye for detail and clean code, I ensure every interface looks flawless and works seamlessly across devices.",
-			email: "ogunyafortunate@gmail.com",
-			socials: [
-				{
-					platform: "twitter",
-					link: "",
-					hoverText: "",
-				},
-				{
-					platform: "website",
-					link: "",
-					hoverText: "",
-				},
-				{
-					platform: "linkedin",
-					link: "",
-					hoverText: "",
-				},
-			],
-		},
-	];
 	return (
 		<section className="py-20 bg-hero">
 			<div className="container mx-auto px-4 text-center">
@@ -96,7 +39,7 @@ const TeamSection = () => {
 								style={{ backgroundImage: `url('${boy.bg}')` }}
 							></div>
 							<CardContent className="p-[32px] text-left bg-white">
-								<Avatar className="w-16 h-16 -mt-22 transition-all duration-300">
+								<Avatar className="size-[80px] -mt-22 transition-all duration-300">
 									<AvatarImage src={boy.pic} />
 									<AvatarFallback>{boy.fb}</AvatarFallback>
 								</Avatar>
@@ -134,16 +77,7 @@ const TeamSection = () => {
 									</Link>
 									<div className="flex gap-2">
 										{boy.socials.map((social, index) => (
-											// <Button
-											// 	key={index}
-											// 	size="sm"
-											// 	variant="outline"
-											// 	className="w-8 h-8 p-0 bg-[#F6F6F6] border-[#EEEEEE] transition-all duration-300 hover:scale-110 rounded-full"
-											// >
-
-											// 	<span className="sr-only">Twitter</span>
-											// </Button>
-											<Tooltip>
+											<Tooltip key={index}>
 												<TooltipTrigger asChild>
 													<Link
 														className="flex justify-center items-center w-8 h-8 p-0 bg-[#F6F6F6] border-[#EEEEEE] border-2 transition-all duration-300 hover:scale-110 rounded-full"
