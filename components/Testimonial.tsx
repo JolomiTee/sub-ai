@@ -11,8 +11,8 @@ const Testimonial = () => {
 					</Badge>
 					<h2 className="font-medium text-4xl md:text-5xl mb-16 text-balance text-[#072206]  tracking-[-1.2px]">
 						Still unsure? These cooks
-						<br />
-						were too, until they tried it.
+						<br className="hidden md:inline" /> were too, until they tried
+						it.
 					</h2>
 				</div>
 

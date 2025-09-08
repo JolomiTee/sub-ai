@@ -30,39 +30,37 @@ export function TestimonialsCarousel() {
 							key={index}
 							className=" basis-4/5 md:basis-3/5 lg:basis-3/5"
 						>
-							<div className="p-1">
-								<Card className="h-full max-h-[300px] p-0 overflow-hidden">
-									<CardContent className="p-2 pe-5 max-h-[300px] bg-white ">
-										<div className="flex flex-col md:flex-row gap-[32px] h-full max-h-[300px]">
+							<div className="md:p-1">
+								<Card className="h-full md:max-h-[300px] p-0 overflow-hidden">
+									<CardContent className="p-0 md:p-2 md:pe-5 md:max-h-[300px] bg-white ">
+										<div className="flex flex-col sm:flex-row gap-[10px] md:gap-[32px] h-full md:max-h-[300px] p-2">
 											{/* Profile Image */}
-											<div className="flex-shrink-0 mx-auto md:mx-0">
-												<div className="relative h-[284px] w-[235px] overflow-hidden">
-													<Image
-														src={
-															testimonial.img ||
-															"/placeholder.svg"
-														}
-														alt={`${testimonial.name} profile`}
-														fill
-														className="object-cover"
-													/>
-												</div>
+											<div className="relative  overflow-hidden flex-shrink-0 mx-auto md:mx-0">
+												<Image
+													src={
+														testimonial.img || "/placeholder.svg"
+													}
+													alt={`${testimonial.name} profile`}
+													height={284}
+													width={235}
+													className="object-cover"
+												/>
 											</div>
 
 											{/* Content */}
-											<div className="flex flex-col pt-[40px] text-[12px] justify-between flex-1 text-center md:text-left">
+											<div className="flex flex-shrink-0 flex-col md:pt-[40px] text-[12px] justify-between flex-1 p-1 sm:pt-[40px]">
 												{/* Testimonial Text */}
 												<div className="mb-4">
-													<div className="text-[#171717] text-[20px] font-medium mb-2">
+													<div className="text-[#171717] text-[20px] font-medium mb-2 sm:text-left">
 														{testimonial.remark}
 													</div>
-													<p className="text-sm md:text-base lg:text-xl text-[#475367] leading-relaxed">
+													<p className="text-sm md:text-base lg:text-xl text-[#475367] leading-relaxed text-left ">
 														{testimonial.text}
 													</p>
 												</div>
 
 												{/* Author Info */}
-												<div className="pb-[40px]">
+												<div className="sm:pb-[40px] text-left md:text-left">
 													<div className="font-semibold text-[#667185] text-base md:text-[14px]">
 														{testimonial.name}
 													</div>

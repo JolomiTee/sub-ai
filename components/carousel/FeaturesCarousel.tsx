@@ -12,7 +12,7 @@ const FeaturesCarousel = () => {
 	return (
 		<Carousel
 			opts={{
-				align: "start",
+				align: "center",
 				loop: true,
 			}}
 			plugins={[
@@ -21,11 +21,11 @@ const FeaturesCarousel = () => {
 				}),
 			]}
 			orientation="vertical"
-			className="w-full max-w-lg mx-auto transition-all duration-700 scroll-animate opacity-0 z-20 max-h-[528px] h-full"
+			className="w-full max-w-lg mx-auto transition-all duration-700 scroll-animate opacity-0 z-20 max-h-[370px] md:max-h-[528px] h-full"
 		>
-			<CarouselContent className="h-[528px] pt-10">
+			<CarouselContent className="h-[385px] md:h-[528px] pt-10">
 				{benefits.map((item, index) => (
-					<CarouselItem key={index} className="md:basis-1/2">
+					<CarouselItem key={index} className="basis-1 md:basis-1/2">
 						<Card
 							key={index}
 							className="p-[24px] bg-white pb-[40px] transition-all duration-300 hover:shadow-xl hover:scale-105 group border-[#EEEEEE] max-w-[448px] gap-4 mx-auto"

@@ -9,8 +9,8 @@ const Hero = () => {
 			<div className="absolute inset-0 bg-[url('/kitchen-ingredients-floating.png')] opacity-5"></div>
 			<div className="container space-y-8 lg:space-y-12 mx-auto px-4 text-center relative z-10">
 				<div className="animate-fade-in-up">
-					<Badge className="mb-6 text-[#1BB425] text-sm animate-bounce-subtle bg-[#1BB425]/5 rounded-full p-1 flex justify-center items-center mx-auto px-2">
-						<div className="rounded-full border bg-white w-[49px] h-[24px] text-xs flex justify-center items-center">
+					<Badge className="mb-6 text-[#1BB425] text-xs md:text-sm animate-bounce-subtle bg-[#1BB425]/5 rounded-full p-1 flex justify-center items-center mx-auto px-2">
+						<div className="rounded-full border bg-white px-2 py-0.5 md:w-[49px] md:h-[24px] text-xs flex justify-center items-center">
 							v&nbsp;1.0
 						</div>
 						Exploration turns product
@@ -31,40 +31,40 @@ const Hero = () => {
 						<Button
 							variant="outline"
 							size="lg"
-							className="text-lg px-8 h-[48px] bg-transparent hover:bg-[#1BB425] transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-full"
+							className="text-base md:text-lg px-8 h-[48px] bg-transparent hover:bg-[#1BB425] transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-full"
 						>
 							About the Builders
 						</Button>
 						<Button
 							size="lg"
-							className="text-lg px-8 h-[48px] bg-[#1BB425] hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group rounded-full"
+							className="text-base md:text-lg px-8 h-[48px] bg-[#1BB425] hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group rounded-full"
 						>
 							Try it out for free
 						</Button>
 					</div>
 				</div>
 
-				<div className="w-full max-w-4/5 h-[440px] rounded-lg mx-auto overflow-hidden">
+				<div className="w-full md:max-w-4/5 h-[440px] aspect-square md:aspect-auto rounded-lg mx-auto overflow-hidden">
 					<Image
 						src={"/hero-bg.svg"}
 						alt=""
-						className="object-[120%] w-full h-full"
+						className="object-cover md:object-[120%] w-full h-full"
 						width={1040}
 						height={528}
 					/>
 				</div>
 			</div>
-			<div className="absolute top-20 left-10 animate-float">
-				<div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 hover:scale-110">
-					<ChefHat className="w-8 h-8 text-accent" />
+			<div className="absolute top-10 md:top-20 left-5 md:left-10 animate-float">
+				<div className="size-10 md:size-16 bg-accent/20 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 hover:scale-110">
+					<ChefHat className="size-6 md:size-8 text-accent" />
 				</div>
 			</div>
 			<div
-				className="absolute top-32 right-16 animate-float"
+				className="absolute top-[220px] right-5 md:top-32 md:right-16 animate-float"
 				style={{ animationDelay: "1s" }}
 			>
-				<div className="w-12 h-12 bg-[#1BB425]/20 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 hover:scale-110">
-					<Sparkles className="w-6 h-6 text-[#1BB425] animate-spin-slow" />
+				<div className="size-10 md:size-12 bg-[#1BB425]/20 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 hover:scale-110">
+					<Sparkles className="size-4 md:size-6 text-[#1BB425] animate-spin-slow" />
 				</div>
 			</div>
 			<div

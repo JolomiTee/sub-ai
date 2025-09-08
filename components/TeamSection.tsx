@@ -35,10 +35,10 @@ const TeamSection = () => {
 							className="overflow-hidden bg-white scroll-animate opacity-0 translate-y-8 transition-all duration-700 hover:shadow-xl w-ful rounded-2xl p-0"
 						>
 							<div
-								className="h-32 bg-cover bg-center"
+								className="h-28 md:h-32 bg-cover bg-center"
 								style={{ backgroundImage: `url('${boy.bg}')` }}
 							></div>
-							<CardContent className="p-[32px] text-left bg-white">
+							<CardContent className="p-[20px] md:p-[32px] text-left bg-white">
 								<Avatar className="size-[80px] -mt-22 transition-all duration-300">
 									<AvatarImage src={boy.pic} />
 									<AvatarFallback>{boy.fb}</AvatarFallback>
@@ -48,11 +48,11 @@ const TeamSection = () => {
 										{boy.name}
 									</h3>
 								</div>
-								<p className=" text-base text-[#475367] mb-4">
+								<p className="text-sm md:text-base text-[#475367] mb-4">
 									{boy.text}
 								</p>
 
-								<div className="flex justify-between">
+								<div className="flex flex-wrap gap-4 justify-between">
 									<Link
 										href={`mailto:${boy.email}`}
 										className="group bg-[#F6F6F6] flex justify-center items-center gap-2 border border-[#EEEEEE]
@@ -75,7 +75,7 @@ const TeamSection = () => {
 											</span>
 										</div>
 									</Link>
-									<div className="flex gap-2">
+									<div className="flex gap-2 justify-center">
 										{boy.socials.map((social, index) => (
 											<Tooltip key={index}>
 												<TooltipTrigger asChild>

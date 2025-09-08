@@ -12,25 +12,24 @@ const Features = () => {
 					</Badge>
 					<h2 className="font-medium text-4xl md:text-5xl mb-6 text-balance leading-[56px] tracking-[-1.2px] text-[#072206]">
 						The help you didn&apos;t know
-						<br />
-						you needed
+						<br className="hidden md:inline" /> you needed
 					</h2>
 					<p className=" text-xl text-[#475367] mb-4 max-w-[548px] mx-auto">
 						Sub AI saves time, reduces kitchen stress, and cooks with
 						confidence, no matter what&apos;s in your pantry
 					</p>
-					<Button className="rounded-full mb-[44px] h-[48px] w-[154px] bg-[#1BB425] hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+					<Button className="text-base md:text-lg rounded-full mb-[44px] h-[48px] w-[154px] bg-[#1BB425] hover:bg-[#1BB425]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg ">
 						Try Sub AI now
 					</Button>
 				</div>
 
-				<div className="max-h-[528px] h-full">
+				<div className="md:max-h-[528px] h-full">
 					<Image
 						src={"/benefits-bg.png"}
 						width={1040}
 						height={514}
 						alt=""
-						className="absolute left-1/2 -translate-x-1/2 h-[514px] z-10"
+						className="absolute left-1/2 -translate-x-1/2 h-[370px] md:h-[514px] w-[130%] z-10"
 					/>
 					<FeaturesCarousel />
 				</div>
